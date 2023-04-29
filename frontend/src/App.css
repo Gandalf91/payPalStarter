@@ -3,7 +3,6 @@
   min-height: 100vh;
 }
 
-
 .header {
   background-color: white;
   display: flex;
@@ -28,7 +27,7 @@
   line-height: 40px;
 }
 
-.logo{
+.logo {
   height: 40px;
 }
 
@@ -36,7 +35,7 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 20px;
   background-color: white;
 }
@@ -62,16 +61,16 @@
 }
 
 .balanceOptions {
-  margin-top: 20px;;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px
+  gap: 20px;
 }
 
 .extraOption {
   width: 180px;
-  text-align: center;  
+  text-align: center;
   border: 2px solid rgba(0, 102, 255, 0.31);
   border-radius: 1000px;
   font-weight: 600;
@@ -81,12 +80,12 @@
 
 .extraOption:hover {
   cursor: pointer;
-  background-color: #31579E;
+  background-color: #31579e;
   color: white;
 }
 
 .requestAndPay {
-  width: 100%; 
+  width: 100%;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -95,8 +94,8 @@
 }
 
 .quickOption {
-  background-color: #31579E;
-  height:100px;
+  background-color: #31579e;
+  height: 100px;
   width: 100px;
   border-radius: 10px;
   color: white;
