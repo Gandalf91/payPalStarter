@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a7b74d58.css",
+    "main.js": "/static/js/main.c796d793.js",
+    "static/media/fastMaticLogo.jpeg": "/static/media/fastMaticLogo.b2a42da318c5026ebc42.jpeg",
+    "static/media/logo.png": "/static/media/logo.27761dd547e63a207dc7.png",
+    "index.html": "/index.html",
+    "main.a7b74d58.css.map": "/static/css/main.a7b74d58.css.map",
+    "main.c796d793.js.map": "/static/js/main.c796d793.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7b74d58.css",
+    "static/js/main.c796d793.js"
+  ]
+}
