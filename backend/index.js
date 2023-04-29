@@ -26,8 +26,8 @@ app.get('/getNameAndBalance', async (req, res) => {
   const { userAddress } = req.query
 
   const response = await Moralis.EvmApi.utils.runContractFunction({
-    chain: '0x13881',
-    address: '0x05095a8CcBD0d74c8e1aAF3bD201Cf70457fB399',
+    chain: '0x89',
+    address: '0x5Bb4B6375b412EFC99DBfDa92daAC7Db3C892D08',
     functionName: 'getMyName',
     abi: ABI,
     params: { _user: userAddress },
@@ -36,7 +36,7 @@ app.get('/getNameAndBalance', async (req, res) => {
   const jsonResponseName = response.raw
 
   const secResponse = await Moralis.EvmApi.balance.getNativeBalance({
-    chain: '0x13881',
+    chain: '0x89',
     address: userAddress,
   })
 
@@ -51,8 +51,8 @@ app.get('/getNameAndBalance', async (req, res) => {
   ).toFixed(2)
 
   const fourResponse = await Moralis.EvmApi.utils.runContractFunction({
-    chain: '0x13881',
-    address: '0x05095a8CcBD0d74c8e1aAF3bD201Cf70457fB399',
+    chain: '0x89',
+    address: '0x5Bb4B6375b412EFC99DBfDa92daAC7Db3C892D08',
     functionName: 'getMyHistory',
     abi: ABI,
     params: { _user: userAddress },
@@ -61,8 +61,8 @@ app.get('/getNameAndBalance', async (req, res) => {
   const jsonResponseHistory = convertArrayToObjects(fourResponse.raw)
 
   const fiveResponse = await Moralis.EvmApi.utils.runContractFunction({
-    chain: '0x13881',
-    address: '0x05095a8CcBD0d74c8e1aAF3bD201Cf70457fB399',
+    chain: '0x89',
+    address: '0x5Bb4B6375b412EFC99DBfDa92daAC7Db3C892D08',
     functionName: 'getMyRequests',
     abi: ABI,
     params: { _user: userAddress },
