@@ -7,7 +7,7 @@ import {
   useContractWrite,
   useWaitForTransaction,
 } from 'wagmi'
-import { polygonMumbai } from '@wagmi/chains'
+import { polygon } from '@wagmi/chains'
 import ABI from '../abi.json'
 
 function RequestAndPay({ requests, getNameAndBalance }) {
@@ -18,8 +18,8 @@ function RequestAndPay({ requests, getNameAndBalance }) {
   const [requestMessage, setRequestMessage] = useState('')
 
   const { config } = usePrepareContractWrite({
-    chainId: polygonMumbai.id,
-    address: '0x05095a8CcBD0d74c8e1aAF3bD201Cf70457fB399',
+    chainId: polygon.id,
+    address: '0x5Bb4B6375b412EFC99DBfDa92daAC7Db3C892D08',
     abi: ABI,
     functionName: 'payRequest',
     args: [0],
@@ -35,8 +35,8 @@ function RequestAndPay({ requests, getNameAndBalance }) {
   })
 
   const { config: configRequest } = usePrepareContractWrite({
-    chainId: polygonMumbai.id,
-    address: '0x05095a8CcBD0d74c8e1aAF3bD201Cf70457fB399',
+    chainId: polygon.id,
+    address: '0x5Bb4B6375b412EFC99DBfDa92daAC7Db3C892D08',
     abi: ABI,
     functionName: 'createRequest',
     args: [requestAddress, requestAmount, requestMessage],
